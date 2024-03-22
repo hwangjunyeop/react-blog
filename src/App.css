@@ -1,38 +1,101 @@
-.App {
+@import url(reset.css);
+
+.black-nav {
+  background: black;
+  width: 100%;
+  display: flex; 
+  padding-left: 20px;  
+  margin-bottom: 20px;
+}
+.black-nav h1 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 30px; 
+  line-height: 80px;
+}
+.black-nav h1 img {
+  width: 80px; 
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.cont_wrap {
+  margin-top: 40px;
+}
+.btn-area {margin-bottom: 25px;}
+.list {
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.subTitle {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+}
+.list-util {
+  display: flex;
+  align-items: center;
+}
+.list-util .date {
+  flex-grow: 4;
+}
+.list-util .like {
+  flex-grow: 1;
+  margin-left: auto; 
+  text-align: right; 
+}
+.list-util .btnDel {
+  flex-grow: 1;
+  margin-left: auto;
+  background: rgb(181, 181, 181);
+  border: none;
+  color: #fff;
+  height: 26px;
+}
+.like {cursor: pointer;}
+.like span:first-child {margin-right: 10px;}
+.modal {
+  margin-top: 30px;
+  padding: 20px;
+  background: #eee;
+}
+.modal * {
+  margin-bottom: 15px;
+}
+.modal .title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.btn-area {
+  text-align: right;
+  margin-right: 10px;
+}
+.btn-area button {
+  background: slateblue;
+  border: none;
+  color: #fff;
+  padding: 6px 10px;
+  margin: 4px;
+  border-radius: 3px;
+}
+.inputArea {
+  margin-top: 25px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputArea .inputBox {
+  width: 240px;
+  height: 30px;
+  padding-left: 5px;
+  border: 1px solid rgba(0,0,0,0.2);
+  vertical-align: 1px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputArea button {
+  height: 32px;
+  background: black;
+  color: #fff;
+  border: none;
 }
